@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Change</title>
+	<link rel="stylesheet" href="">
+	
+	
+	<style>
+		#color{
+			display:flex;
+			flex-direction:column;
+			 align-items: center;
+  justify-content: center;
+		}
+	</style>
+
+</head>
+
+<body id="colors">
+<div id="color">
+	<h2>Select the dropdown value to change color</h2></br>
+	<select id="selectValue">
+		<option value "white">Default</option>
+		<option id ="one">Green</option>
+		<option id ="one">Black</option>
+	</select>
+</div>
+
+	
+</body>
+<script>
+
+	console.log("running");
+	
+	 document.querySelector("#selectValue").addEventListener("click", function (e) {
+		
+		console.log(e.target.value);
+		document.getElementById("colors").style.background = e.target.value;
+			
+	 });
+	
+	
+</script>
+</html>
